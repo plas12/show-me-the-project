@@ -1,0 +1,2640 @@
+﻿a1=0
+a2=0
+a3=0
+a4=0
+a5=0
+a6=0
+a7=0
+a8=0
+a9=0
+b1 = 0
+b2 = 0
+c = 0
+d = 'a'
+gg = 0
+
+
+z = 0
+zo =	0
+ss = 0
+char a[10]
+
+
+
+void setup()
+{
+	LcdClear()
+	z = 0
+	zo = 0
+	LcdClear()
+ss = 0
+char a[10]
+a1=0
+a2=0
+a3=0
+a4=0
+a5=0
+a6=0
+a7=0
+a8=0
+a9=0
+b1 = 0
+b2 = 0
+c = 0
+d = 'a'
+gg = 0
+
+}
+
+void loop()
+{
+	LcdBackLight()
+	b = DigitalRead(2)
+	
+	z = z + 1
+
+	
+	
+	
+	if ( z>=10 )
+	{
+	
+		
+		for (i = 0; i < 5; i++)
+		{
+		fnb = DigitalRead(2)
+if ( fnb == 1 )
+{
+	break
+}
+	gg = 0
+			PrintLine("+++")
+			Delay(500)
+		}
+
+		LcdBackLight()
+	
+		
+		a1 = a[0]
+		a2 = a[1]
+		a3 = a[2]
+		a4 = a[3]
+		PrintLine(a1)
+		PrintLine(a2)
+		PrintLine(a3)
+		PrintLine(a4)
+		if ( a1 ==  1&&	a2 == 2	)
+		{
+			d = 'a'
+			if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+	
+		}
+		if (( a1 == 2 && a2 == 1) && 	(a3 == 1&& a4 == 1 ))
+		{
+			d = 'b'
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+			
+			
+		}
+		if (( a1 == 2&&	a2 == 1)&&(a3 == 2&&a4 ==  1 ))
+		{
+			d = 'c'
+			
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+		}
+		if (( a1 == 2&&	a2 == 1)&&	a3 == 1 )
+		{
+			d = 'd'
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+		}
+		if ( a1 == 1 )
+		{
+			d = 'e'
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+			
+		}
+		if (( a1 == 1&&a2 == 1)&&(a3 = 2&&a4 == 1 ))
+		{
+			d = 'f'
+			
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+		}
+		if ( a1 == 2&&a2 == 2)
+		{
+			d = 'g'
+			
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+		}
+		if (( a1 == 1&&a2 == 1)&&(a3 == 1&&a4 == 1 ))
+		{
+			d = 'h'
+			
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+		}
+		if ( a1 == 1&&a2 == 1 )
+		{
+			d = 'i'
+			
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+		}
+		if ( (a1 == 1&&	a2 == 2)&&(a3 == 2&&a4 == 2 ))
+		{
+			d = 'j'
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+			
+		}
+		if (( a1 == 2&&a2 == 1)&&a3 == 2 )
+		{
+			d = 'k'
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+			
+		}
+		if ( (a1 == 1&&a2 == 2)&&(a3 == 1&&a4 == 1 ))
+		{
+			d = 'l'
+			
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+		}
+		if ( a1 == 2&&a2 == 2 )
+		{
+			d = 'm'
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+			
+		}
+		if ( a1 == 2&&a2 == 1 )
+		{
+			d = 'n'
+			
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+		}
+		if ( (a1 == 2&&a2 == 2)&&a3 == 2 )
+		{
+			d = 'o'
+			
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+		}
+		if (( a1 == 1&&a2 == 2)&&(a3 == 2&&a4 == 2) )
+		{
+			d = 'p'
+			
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+		}
+		if (( a1 == 2&&a2 == 2)&&(a3 == 1&&a4 == 2 ))
+		{
+			d = 'q'
+			
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+		}
+		if ( (a1 == 1&&a2 == 2)&&a3 == 1 )
+		{
+			d = 'r'
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+			
+		}
+		if ( (a1 == 1&&a2 == 1)&&a3 == 1 )
+		{
+			d = 's'
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+			
+		}
+		if ( a1 == 2 )
+		{
+			d = 't'
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+			
+		}
+		
+		
+		
+		if ( (a1 == 1&&a2 == 1)&&a3 == 2 )
+		{
+			d = 'u'
+			
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+		}
+		
+		
+		
+		if ( (a1 == 1&&a2 == 1)&&(a3 == 1&&a4 == 2) )
+		{
+			d = 'v'
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+			
+		}
+		
+		
+		
+		if ( (a1 == 1&&a2 == 2)&&a3 == 2 )
+		{
+			d = 'w'
+			
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+		}
+		
+		
+		
+		if ( (a1 == 2&&a2 == 1)&&(a3 == 1&&a4 == 2) )
+		{
+			d = 'x'
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+			
+			
+		}
+		
+		
+		
+		if ( (a1 == 2&&a2 ==1)&&(a3 == 2&&a4 == 2) )
+		{
+			d = 'y'
+			
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+			
+			
+		}
+		
+		
+		
+		if ( (a1 == 2&&a2 == 2)&&(a3 == 1&&a4 == 1) )
+		{
+			d = 'z'
+			
+				if ( c == 0 && gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(0, 0)
+				LcdPrint(d)
+				PrintLine("111")
+		
+			}
+			if ( c == 1&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(1, 0)
+				LcdPrint(d)
+			}
+			if ( c == 2&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(2, 0)
+				LcdPrint(d)
+				
+			}
+			if ( c == 3&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(3, 0)
+				LcdPrint(d)
+			}
+			if ( c == 4&& gg == 0 )
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(4, 0)
+				LcdPrint(d)
+				PrintLine("2")
+			}
+			if ( c == 5 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(5, 0)
+				LcdPrint(d)
+			}
+			if ( c == 6 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(6, 0)
+				LcdPrint(d)
+			}
+			if ( c == 7 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(7, 0)
+				LcdPrint(d)
+			}
+			if ( c == 8 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(8, 0)
+				LcdPrint(d)
+				PrintLine("3")
+			}
+			if ( c == 9 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(9, 0)
+				LcdPrint(d)
+			}
+			if ( c == 10 && gg == 0)
+			{
+				c = c +1
+				gg = 1
+				LcdSetCursor(10, 0)
+				LcdPrint(d)
+			}
+			if ( c == 11 && gg == 0)
+			{
+				c = 0
+				gg = 1
+				PrintLine("4")
+LcdClear()
+
+			}
+			
+		}
+a[0] = 0
+a[1] = 0
+a[2] = 0
+a[3] = 0
+z=0
+ss = 0
+		
+	}
+	zo = 0
+	
+	while(b == 1)
+	{
+		
+		PrintLine("_")
+		
+		zo = zo + 1
+		Delay(500)
+		b = DigitalRead(2)
+		z = 0
+		
+		
+		if ( b == 0 )
+		{
+			break
+		}
+		
+	}
+	
+	
+	
+	
+	if ( zo == 1 )
+	{
+		a[ss] = 1
+		PrintLine("1")
+		ss=  ss+ 1
+	}
+	if ( zo >= 2 )
+	{
+		a[ss] = 2
+		PrintLine("2")
+		ss=  ss+ 1
+	}
+	
+	
+	
+	
+	
+	Delay(500)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
