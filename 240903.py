@@ -155,8 +155,8 @@ def bey():
         for i in range( len( balen)):
             print(bac[i], " : ", bap[i], "원 : ", balen[i], "개")
         print("\n합계 : ", top)
-        top == 0
-        plbl['text'] == "합계 : "
+        top = 0
+        plbl['text'] = "합계 : "
 
 def sleep():
     time.sleep(1)
