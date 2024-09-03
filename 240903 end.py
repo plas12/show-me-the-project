@@ -90,41 +90,47 @@ def order(text, bay):
 
 def X(event):
     global bap, bac, balen, top
-
+    index = sum(orlist.curselection())
+    print(index)
     
-    if balen[sum(orlist.curselection())]  <  2:
-        if kf.count(bac[sum(orlist.curselection())]) == 1:
+    if balen[index]  <  2:
+        if kf.count(bac[index]) == 1:
   
-            top -= kfc[kf.index(bac[sum(orlist.curselection())])]
-        elif jf.count(bac[sum(orlist.curselection())]) == 1:
+            top -= kfc[kf.index(bac[index])]
+        elif jf.count(bac[index]) == 1:
 
-            top -= jfc[jf.index(bac[sum(orlist.curselection())])]
+            top -= jfc[jf.index(bac[index])]
         else:
 
-            top -= afc[af.index(bac[sum(orlist.curselection())])]
+            top -= afc[af.index(bac[index])]
             
-        bac.remove( bac[sum(orlist.curselection()) ] )
-        bap.remove( bap[sum(orlist.curselection())] )
-        balen.remove( balen[sum(orlist.curselection())] )
-        orlist.delete( sum( orlist.curselection()) )
+        bac.remove( bac[index ] )
+        bap.remove( bap[index] )
+        balen.remove( balen[index] )
+        orlist.delete( index )
         
     else:
-        if kf.count(bac[sum(orlist.curselection())]) == 1:
-            bap[sum(orlist.curselection())] -= kfc[kf.index(bac[sum(orlist.curselection())])]
-            top -= kfc[kf.index(bac[sum(orlist.curselection())])]
+        if kf.count(bac[index]) == 1:
+            bap[index] -= kfc[kf.index(bac[index])]
+            top -= kfc[kf.index(bac[index])]
+            print(bac, bap, balen)
             
-        elif jf.count(bac[sum(orlist.curselection())]) == 1:
-            bap[sum(orlist.curselection())] -= jfc[jf.index(bac[sum(orlist.curselection())])]
-            top -= jfc[jf.index(bac[sum(orlist.curselection())])]
-            
+        elif jf.count(bac[index]) == 1:
+            bap[index] -= jfc[jf.index(bac[index])]
+            top -= jfc[jf.index(bac[index])]
+            print(bac, bap, balen)
         else:
-            bap[sum(orlist.curselection())] -= afc[af.index(bac[sum(orlist.curselection())])]
-            top -= afc[af.index(bac[sum(orlist.curselection())])]
-
-        balen[sum(orlist.curselection())] -= 1
-        orlist.delete([sum(orlist.curselection())])
-        orlist.insert(sum(orlist.curselection()), bac[sum(orlist.curselection())] + " : " + str(bap[sum(orlist.curselection())]) + " : " + str(balen[sum(orlist.curselection())]))
-       
+            bap[index] -= afc[af.index(bac[index])]
+            top -= afc[af.index(bac[index])]
+            print(bac, bap, balen)
+            
+        balen[index] -= 1
+        orlist.delete(index)
+        print(index)
+        orlist.insert(index, str(bac[index]) + " : " + str(bap[index]) + " : " + str(balen[index]))
+        print(index, bac[index], str(bap[index]), str(balen[index]))
+        
+        
     plbl['text'] = "합계 : " + str(top)
         
 def bey():
